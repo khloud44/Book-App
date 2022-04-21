@@ -1,0 +1,16 @@
+{% extends 'minBooks/base.html'  %}   
+{% block title %} Form {% endblock %}
+{% block content %}
+    <form action="" method="POST" class="form-control" enctype="multipart/form-data">
+        {% csrf_token %}
+        <!-- <div class="form-group"> -->
+            <table>
+                {{form}} 
+                {{form.errors}}
+            </table>
+            <a href="{% url   'add_book' %}" class="text-decoration-none">
+                <button class="btn btn-success is-fullwidth is-medium mt-5" type="submit">Submit</button>
+            </a>
+        <!-- </div> -->
+    </form>
+{% endblock %}

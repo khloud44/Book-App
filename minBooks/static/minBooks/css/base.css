@@ -1,0 +1,34 @@
+.contain{
+    overflow:auto;
+    background-color:rgb(58, 52, 52); 
+    display:flex;
+    justify-content: center;
+}
+.contain ul li{
+    list-style: none;
+    display:inline;
+    margin-right:20px;
+    cursor: pointer;
+}
+.contain ul li a{
+    color:white;
+}
+.contain ul li:hover a{
+    color:#ff1648;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:#ff1648;
+}
+.bg-black{
+    background-color: black;
+}
+.contain ul li{
+    color:white;
+    padding-left:20px;
+}
+li:hover {
+    color:#ff1648;
+}
